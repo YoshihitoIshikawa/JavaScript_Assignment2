@@ -28,27 +28,110 @@ function clickbtn(target){
 
 function clickplus(target){
   
-  let lastLetter = textSpace.innerHTML.slice(-1);
   let targetValue = target.innerHTML;
-  console.log(lastLetter,targetValue)
   
-  if(lastLetter == "+" && targetValue == "+" ){
+  if(textSpace.innerHTML.slice(-1) == "+" && targetValue == "+" ){
     let str = textSpace.innerHTML;
     let newstr = str.slice(0,-1);
     textSpace.innerHTML = newstr + targetValue;
-    
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  } else if(textSpace.innerHTML.slice(-1) == "-" && targetValue == "+" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  } else if(textSpace.innerHTML.slice(-1) == "*" && targetValue == "+" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  } else if(textSpace.innerHTML.slice(-1) == "/" && targetValue == "+" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
   }
-  
 }
 
 function clickminus(target){
+  
+  
+  let targetValue = target.innerHTML;
+  
+  if(textSpace.innerHTML.slice(-1) == "+" && targetValue == "-" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  } else if(textSpace.innerHTML.slice(-1) == "-" && targetValue == "-" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  } else if(textSpace.innerHTML.slice(-1) == "*" && targetValue == "-" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  } else if(textSpace.innerHTML.slice(-1) == "/" && targetValue == "-" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  }
 
   }
 
 function clickmulti(target){
   
+  let targetValue = target.innerHTML;
+  
+  if(textSpace.innerHTML.slice(-1) == "+" && targetValue == "*" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  } else if(textSpace.innerHTML.slice(-1) == "-" && targetValue == "*" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  } else if(textSpace.innerHTML.slice(-1) == "*" && targetValue == "*" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  } else if(textSpace.innerHTML.slice(-1) == "/" && targetValue == "*" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  }
   }
 
 function clickdiv(target){
  
+  let targetValue = target.innerHTML;
+  
+  if(textSpace.innerHTML.slice(-1) == "+" && targetValue == "/" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  } else if(textSpace.innerHTML.slice(-1) == "-" && targetValue == "/" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  } else if(textSpace.innerHTML.slice(-1) == "*" && targetValue == "/" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  } else if(textSpace.innerHTML.slice(-1) == "/" && targetValue == "/" ){
+    let str = textSpace.innerHTML;
+    let newstr = str.slice(0,-1);
+    textSpace.innerHTML = newstr + targetValue;
+    textSpace.innerHTML = textSpace.innerHTML.slice(0,-1);
+  }
   }
